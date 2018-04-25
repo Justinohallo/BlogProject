@@ -35,9 +35,29 @@ app.post('/addpost', (req, res) => {
 
 
 app.delete('/blog/:blogid', (req, res) => {
-    res.send('Blogs')
+    for(let i=0; i<users.length; i++) {
+        if(blogs[i].id === req.params.id) {
+          // Remove the user when the matching name is found
+          blogs.splice(i, 1)
+          break
+        }
+      }
+      res.json(blogs)
 }
 )
+
+app.delete('/users', function(req, res) {
+    for(let i=0; i<users.length; i++) {
+      if(users[i].name === req.body.username) {
+        // Remove the user when the matching name is found
+        users.splice(i, 1)
+        break
+      }
+    }
+    res.json(users)
+  })
+
+
 
 let blogs = [
     {

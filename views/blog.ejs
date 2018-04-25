@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+<% for (let i = 0; i < blogpost.length; i++) { %> 
+
+<div> 
+<p> <%= blogpost[i].title %> </p>
+
+ <p>   <%= blogpost[i].summary %> </p>
+
+<a href='http://localhost:8080/blog/<%=blogpost[i].id%>'> Read More </a> 
+</div> 
+
+
+<% } %> 
+
+
+
+
+
+    
+    </body>
+</html>

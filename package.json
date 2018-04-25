@@ -1,0 +1,25 @@
+{
+  "name": "ejs-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Justinohallo/BlogProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Justinohallo/BlogProject/issues"
+  },
+  "homepage": "https://github.com/Justinohallo/BlogProject#readme",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  }
+}
